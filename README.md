@@ -210,3 +210,154 @@ von Mangoldt, H. (1895). Journal für die reine und angewandte Mathematik, 114, 
 For questions or collaboration: [Your Email]
 
 This work provides overwhelming statistical evidence for a universal 12-stream structure in the Riemann zeros, controlled by the Prime Field and converging to an asymptotic shape parameter $k_\infty = 12/10 = 1.200$. The constructed hybrid operator successfully predicts zeros in a strict cross-validation framework, offering a concrete realization of the Hilbert–Pólya conjecture.
+
+
+
+
+Here is the English translation of the provided text, preserving the structure, formatting, and scientific terminology.
+
+**I. STRUCTURE OF ZEROS**
+The zeros of $\zeta(s)$ are divided into 12 streams according to the residue classes of Gram indices $m \bmod 12$. The ratio of average intervals $\langle \Delta_c \rangle / \langle \Delta \rangle = 12.000 \pm 0.055$.
+
+The distribution among the 12 classes is non-uniform ($\chi^2 = 50.35$, $p = 5.4 \times 10^{-7}$; permutation test $p < 0.0001$).
+
+Even-odd asymmetry: even classes are overrepresented ($+0.47\%$), odd classes are underrepresented ($-0.47\%$).
+
+Class 6 — excess $+0.81\%$ (maximum), Class 7 — deficit $-0.73\%$ (minimum).
+
+**II. BOUND PAIR (6,7)**
+Classes 6 and 7 are anti-correlated: $r = -0.65$, $p = 2.3 \times 10^{-25}$.
+
+The sum $N_6 + N_7$ is anomalously stable: variance ratio compared to expected for independent streams = $0.414$.
+
+Without the pair (6,7), the remaining 10 streams yield $k \approx 1.09$ — close to the Poisson limit $k = 1.0$.
+
+Effective number of independent streams: $N_{\text{eff}} = 10$. This explains $k_\infty = 12/10 = 1.200$.
+
+**III. EVOLUTION OF THE PARAMETER $k$ AND THE LIMIT $k_\infty$**
+The shape parameter $k$ of the gamma distribution grows with height:
+
+$t \sim 4 \times 10^4$: $k \approx 1.040$
+
+$t \sim 1.1 \times 10^6$: $k \approx 1.104$
+
+$t \sim 2.68 \times 10^{11}$: $k \approx 1.206$
+
+The asymptotic limit $k_\infty = 12/10 = 1.200$ is confirmed on Odlyzko's data:
+
+$12/10 = 1.200$: error $0.5\%$
+
+$9/8 = 1.125$: error $7.2\%$
+
+95% confidence interval for $k_\infty$: $[1.198, 1.277]$ — includes $1.200$, excludes $1.125$.
+
+**IV. PRIME FIELD CONTROLS GRAM DIFFUSION**
+Stalls ($\Delta m = 0$) occur with positive Prime Field: $+2.58 \pm 2.27$.
+
+Normal jumps ($\Delta m = 2$) occur with negative Prime Field: $-3.08 \pm 2.30$.
+
+The difference is statistically significant at $p < 10^{-300}$ (with Bonferroni correction).
+
+The effect is robust across all 9 tested parameter configurations (max_power $\in \{2,3,4\}$, n_primes $\in \{100,200,500\}$).
+
+The most significant contribution comes from primes $p \equiv \pm 5 \pmod{12}$ ($p = 5, 11, 17, 29, 41, \dots$).
+
+Logistic regression on prime contributions predicts event type with AUC = 0.9967.
+
+**V. PHASE SHIFT $\Delta$ AND JUMP TYPE**
+Normal jumps ($+2$): mean $\Delta = -0.2743 \pm 0.1665$.
+
+Anomalous jumps ($+1$): mean $\Delta = -0.2927 \pm 0.1570$.
+
+Difference is significant: $p = 4.61 \times 10^{-242}$ (Mann–Whitney U).
+
+**VI. HERMITIAN OPERATOR $H$**
+Transition matrix $M$: $P(+1) = 0.584$, $P(+2) = 0.416$. Non-zero entries only for $c \to c+1$ and $c \to c+2 \bmod 12$.
+
+Hermitian operator $H = (M + M^T)/2$ has a spectrum correlating with the zeros of $\zeta(s)$.
+
+On the first 12 zeros: $r = 0.8892$.
+
+On 2,000 blocks of 12 zeros (fine grid): mean $r = 0.9275 \pm 0.0135$. 100% of blocks have $r > 0.85$.
+
+On 17 blocks (coarse grid): mean $r = 0.9238 \pm 0.0145$. 100% of blocks have $r > 0.85$.
+
+Universality confirmed: the spectrum of $H$ correlates with any block of 12 zeros across the entire height range.
+
+**VII. EXACT SCALE INVARIANCE OF MATRIX $M$**
+The trace of $M^k$ grows linearly with $k$: $\text{Tr}(M^{11}) = 5.288902$, $\text{Tr}(M^{89}) = 42.792027$.
+
+Trace ratio: $\text{Tr}(M^{89}) / \text{Tr}(M^{11}) = 8.090909\ldots = 89/11$ (match to 6 decimal places).
+
+For any prime $p$ coprime to 12: $\text{Tr}(M^p) \propto p$.
+
+This proves $\mathbb{Z}_{12}$-symmetry and a nearly degenerate dominant subspace.
+
+**VIII. NETWORK OF ANTI-CORRELATIONS**
+12 significant anti-correlations found between classes ($p < 0.05$).
+
+All 12 pairs are even-odd ($p = 0.0003$, Monte Carlo test).
+
+Strongest pair: (10,11) with $r = -0.73$.
+
+Class 3 is completely isolated (degree 0 in the anti-correlation graph).
+
+The graph consists of two connected components, algebraic connectivity $\lambda_2 = 0$.
+
+**IX. GRAM DIFFUSION AS AN ORNSTEIN-UHLENBECK PROCESS**
+Restoring force: $\mu(\phi) \approx -0.985 \cdot \phi$ ($R^2 = 0.998$).
+
+Phase volatility: $\sigma_\phi \approx 0.304$.
+
+Stationary phase distribution is Gaussian with $\sigma_\infty^2 = \sigma_\phi^2 / (2\gamma) \approx 0.047$.
+
+Correlation of theory with empirical distribution of $\Delta$: $r = 0.9985$.
+
+**X. CONTINUOUS LIMIT: FOKKER-PLANCK EQUATION**
+Discrete Langevin equation: $\Delta m_n = \mu(\text{PF}_n) + \sigma \xi_n$, where $\sigma = 0.596$.
+
+Drift $\mu(\text{PF})$ is sigmoidal: $R^2 = 0.9659$.
+
+Langevin simulation reproduces the empirical distribution of $\Delta m$: KS-test $p = 0.195$.
+
+Fokker-Planck equation for phase density $\rho(\phi, \tau)$:
+∂ρ/∂τ = γ ∂/∂ϕ (ϕρ) + (σ_ϕ²/2) ∂²ρ/∂ϕ².
+
+**XI. HYBRID OPERATOR**
+Hybrid Hamiltonian: $H = H_{12} + V_{\text{Prime}}$ (diagonal Prime Field potential).
+
+Nonlinear scaling: $\gamma_n \approx a \lambda_n + b + c \ln(\lambda_n + 1)$ — accounts for zero density growth.
+
+Calibrated on 6 zeros, tested on the next 6: correlation $r > 0.95$, average error $\sim 0.5$.
+
+**XII. LEHMER PAIRS AND ADDITIONAL CHECKS**
+Lehmer pairs (close zeros) have an anomalous Prime Field ($p < 0.001$).
+
+Stall frequency for Lehmer pairs is 2.5 times higher than average.
+
+L-function mod 101: on 25 zeros ($t \sim 30$) $k \approx 0.82$ — connections are stronger at low heights.
+
+Class autocorrelation at lags multiple of 12: $r \approx 0.79$ — confirmation of $\mathbb{Z}_{12}$-periodicity.
+
+**XIII. CONNECTION TO THE RIEMANN HYPOTHESIS**
+The critical line is an attractor of the dynamics: restoring force $\mu(\phi) \propto -\phi$ always pushes phase toward $\phi = 0$.
+
+Harmonic potential $V(\phi) = \frac{1}{2}\gamma \phi^2$ has a minimum on the critical line.
+
+Proof program for RH:
+
+1. Derive $\mu(\phi)$ analytically from the explicit formula.
+2. Prove existence and uniqueness of a stationary solution to the Fokker-Planck equation.
+3. Show that the spectrum of the linearized operator coincides with ${\gamma_n}$.
+
+**XIV. SUMMARY**
+| Category | Key Result |
+| :--- | :--- |
+| Structure | 12 streams, non-uniformity $p = 5.4 \times 10^{-7}$ |
+| Anomaly | Bound pair (6,7), Class 3 isolated |
+| Limit | $k_\infty = 12/10 = 1.200$ (error $0.5\%$ at $t \sim 10^{11}$) |
+| Control | Prime Field controls Gram diffusion ($p < 10^{-300}$) |
+| Operator | $H$ correlates with zeros: $r = 0.9275 \pm 0.0135$ (2,000 blocks) |
+| Dynamics | Ornstein-Uhlenbeck process + Fokker-Planck equation |
+| Invariance | $\text{Tr}(M^p) \propto p$ — exact scale symmetry |
+| Universality | 100% of 12-zero blocks have $r > 0.85$ |
