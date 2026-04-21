@@ -1,5 +1,5 @@
 Twelve-Stream Structure of Riemann Zeros: From Gram Diffusion to a Fokker-Planck Equation Driven by the Prime Field
-Автор: [Ваше имя]
+Автор: WB
 
 Аннотация (Abstract)
 We present a comprehensive theory of the fine structure of the Riemann zeta function zeros. First, we partition $N = 2,000,000$ zeros into 12 streams based on Gram indices modulo 12. We discover a statistically significant even-odd asymmetry ($p = 5.4 \times 10^{-7}$) with systematic excess in class 6 and deficit in class 7. The shape parameter $k$ of the gamma distribution for normalized spacings within streams evolves from $k \approx 1.026$ at $t \sim 2 \times 10^4$ to $k \approx 1.106$ at $t \sim 1.1 \times 10^6$, reaching $k \approx 1.199$ at $t \sim 2.68 \times 10^{11}$, asymptotically converging to $k_\infty = 12/10 = 1.200$ (95% CI: $[1.198, 1.277]$).
@@ -396,5 +396,5 @@ The author thanks Andrew Odlyzko for making the zero tables publicly available.
 [5] von Mangoldt, H. (1895). Journal für die reine und angewandte Mathematik, 114, 255-305.
 
 Приложение A. Доступность кода и данных (Appendix A. Code and Data Availability)
-Full code and processed data are available in the repository: [URL to be added].
+Full code and processed data are available in the repository: 
 
