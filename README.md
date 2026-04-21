@@ -1,3 +1,7 @@
+DOI: 10.5281/zenodo.19676116
+
+
+
 # gram-diffusion-fp-
 
 # Twelve-Stream Structure of Riemann Zeros: From Gram Diffusion to a Fokker–Planck Equation Driven by the Prime Field
